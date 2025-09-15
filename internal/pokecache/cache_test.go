@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"internal/pokecache"
+	
 )
 
 func TestCacheEviction(t *testing.T) {
@@ -12,7 +12,7 @@ func TestCacheEviction(t *testing.T) {
 	interval := 1 * time.Second
 
 	// Create a cache with the above interval
-	cache := pokecache.NewCache(interval)
+	cache := NewCache(interval)
 
 	// Add an item
 	key := "testKey"

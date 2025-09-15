@@ -20,7 +20,7 @@ func TestCleanInput(t *testing.T)  {
   }
   //The excecution loop
   for _, c := range cases{
-    actual := cleaninput(c.input)
+    actual := CleanInput(c.input)
     
     if len(actual) != len(c.expected) {
       t.Errorf("For input %q: expected slice of length %d, got %d", c.input, len(c.expected), len(actual))
